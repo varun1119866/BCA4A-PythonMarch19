@@ -1,0 +1,378 @@
+Practical 1
+
+1.1 Program to Calculate Area and Perimeter of a Rectangle:
+
+def calculate_area(length, width):
+    return length * width
+def calculate_perimeter(length, width):
+    return 2 * (length + width)
+length = float(input("Enter the length of the rectangle: "))
+width = float(input("Enter the width of the rectangle: "))
+area = calculate_area(length, width)
+perimeter = calculate_perimeter(length, width)
+print("Area of the rectangle:", area)
+print("Perimeter of the rectangle:", perimeter)
+
+
+1.2 Program to Calculate Average Marks of 3 Subjects:
+
+def calculate_average(subject1, subject2, subject3):
+    return (subject1 + subject2 + subject3) / 3
+subject1 = float(input("Enter marks for subject 1: "))
+subject2 = float(input("Enter marks for subject 2: "))
+subject3 = float(input("Enter marks for subject 3: "))
+average_marks = calculate_average(subject1, subject2, subject3)
+print("Average marks:", average_marks)
+
+
+1.3 Program to Compute Compound Interest:
+
+def compute_compound_interest(principal, rate, time):
+    return principal * (1 + rate / 100) ** time
+principal = float(input("Enter the principal amount: "))
+rate = float(input("Enter the rate of interest (per annum): "))
+time = float(input("Enter the time period (in years): "))
+compound_interest = compute_compound_interest(principal, rate, time)
+print("Compound interest:", compound_interest)
+
+Practical 2
+
+2.1 Program to Demonstrate Slicing Operations in Strings:
+# Slicing operations on strings
+string = "Hello, World!"
+# Print the whole string
+print("Original String:", string)
+# Slicing to get a substring
+substring = string[7:12]
+print("Substring:", substring)
+# Slicing to get every second character
+every_second = string[::2]
+print("Every Second Character:", every_second)
+# Slicing to reverse the string
+reversed_string = string[::-1]
+print("Reversed String:", reversed_string)
+
+
+2.2 Program to Demonstrate Built-in Functions of Strings:
+
+# Built-in functions of strings
+string = "Hello, World!"
+# Length of the string
+print("Length of the string:", len(string))
+# Convert to lowercase
+print("Lowercase:", string.lower())
+# Convert to uppercase
+print("Uppercase:", string.upper())
+# Count occurrences of a substring
+substring = "o"
+print("Occurrences of 'o':", string.count(substring))
+# Find the index of a substring
+substring = "World"
+print("Index of 'World':", string.find(substring))
+# Replace a substring with another string
+new_string = string.replace("Hello", "Hi")
+print("After replacement:", new_string)
+# Split the string into a list based on a delimiter
+words = string.split(",")
+print("Split string:", words)
+
+Practical 3
+
+3.1 Program to Check if one Number is Divisible by the Other:
+
+def check_divisibility(num1, num2):
+    if num1 % num2 == 0:
+        print(f"{num1} is divisible by {num2}")
+    else:
+        print(f"{num1} is not divisible by {num2}")
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
+check_divisibility(num1, num2)
+
+3.2 Program to Check if a Number is Positive, Negative, or Zero:
+def check_number(num):
+    if num > 0:
+        print("The number is positive.")
+    elif num < 0:
+        print("The number is negative.")
+    else:
+        print("The number is zero.")
+num = float(input("Enter a number: "))
+check_number(num)
+
+
+3.3 Program to Check if a Given Year is Leap or Not:
+def check_leap_year(year):
+    if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+        print(f"{year} is a leap year.")
+    else:
+        print(f"{year} is not a leap year.")
+year = int(input("Enter a year: "))
+check_leap_year(year)
+
+
+3.4 Program to Calculate DA and HRA for an Employee's Basic Salary:
+def calculate_salary(bs):
+    if bs >= 20000:
+        da = 0.3 * bs
+        hra = 0.2 * bs
+    else:
+        da = 0.2 * bs
+        hra = 0.1 * bs
+    print("Basic Salary:", bs)
+    print("DA:", da)
+    print("HRA:", hra)
+basic_salary = float(input("Enter the basic salary: "))
+calculate_salary(basic_salary)
+
+3.5 Program to Compute Commission for a Salesman:
+
+def calculate_commission(sales_amount):
+    if sales_amount >= 15000:
+        commission = 0.2 * sales_amount
+    elif sales_amount >= 1000:
+        commission = 0.15 * sales_amount
+    else:
+        commission = 0.1 * sales_amount
+    print("Sales Amount:", sales_amount)
+    print("Commission:", commission)
+sales_amount = float(input("Enter the sales amount: "))
+calculate_commission(sales_amount)
+
+
+Practical 4
+
+4.1 Program to Show the Working of a While Loop with Text:
+
+# While loop with text
+text = "Hello, World!"
+index = 0
+while index < len(text):
+    print(text[index])
+    index += 1
+
+
+4.2 Program to Show the Working of a While Loop with Numbers:
+
+# While loop with numbers
+num = 1
+while num <= 5:
+    print(num)
+    num += 1
+
+
+4.3 Program to Show the Working of break and continue Statement:
+# Break and continue statement
+num = 1
+while num <= 10:
+    if num == 5:
+        break
+    print(num)
+    num += 1
+num = 1
+while num <= 10:
+    if num % 2 == 0:
+        num += 1
+        continue
+    print(num)
+    num += 1
+
+
+4.4 Program to Show the Use of Else Statement with While and Break:
+# Else statement with while and break
+num = 1
+while num <= 5:
+    print(num)
+    num += 1
+else:
+    print("Loop ended normally")
+
+
+4.5 Program to Compute the Sum of the Series 4 + 8 + 12 + … + 40:
+
+# Sum of the series 4 + 8 + 12 + ... + 40
+total = 0
+for num in range(4, 41, 4):
+    total += num
+
+print("Sum of the series:", total)
+
+
+4.6 Program to Display the Fibonacci Sequences up to nth Term:
+
+# Fibonacci sequence up to nth term
+n = int(input("Enter the value of n: "))
+a, b = 0, 1
+count = 0
+if n <= 0:
+    print("Please enter a positive integer")
+elif n == 1:
+    print("Fibonacci sequence up to", n, ":")
+    print(a)
+else:
+    print("Fibonacci sequence up to", n, ":")
+    while count < n:
+        print(a, end=" ")
+        nth = a + b
+      a = b
+        b = nth
+        count += 1
+
+4.7 Program to Print Multiplication Table of a Number Using for Loop:
+
+# Multiplication table using for loop
+num = int(input("Enter a number to print its multiplication table: "))
+print(f"Multiplication table of {num}:")
+for i in range(1, 11):
+    print(f"{num} x {i} = {num*i}")
+
+
+4.8 Program to Print a Triangle Pattern:
+# Triangle pattern
+rows = 5
+for i in range(1, rows + 1):
+    print("*" * i)
+
+4.9 Program to Compute Sum of the Series 3 + 6 + 9 + … + 30:
+# Sum of the series 3 + 6 + 9 + ... + 30
+total = 0
+for num in range(3, 31, 3):
+    total += num
+print("Sum of the series:", total)
+
+4.10 Program to Print the Product of the Series \( m = 15 \times 13 \times 11 \times 9 \times 7 \):
+
+# Product of the series m = 15 * 13 * 11 * 9 * 7
+product = 15 * 13 * 11 * 9 * 7
+print("Product of the series:", product)
+
+4.11 Program to Compute Factorial of a Number:
+
+# Factorial of a number
+num = int(input("Enter a number to compute its factorial: "))
+factorial = 1
+for i in range(1, num + 1):
+    factorial *= i
+print("Factorial of", num, "is:", factorial)
+
+
+4.12 Program to Display the Cube of First 10 Even Numbers:
+# Cube of first 10 even numbers
+print("Cube of first 10 even numbers:")
+for num in range(2, 21, 2):
+    print(num, "^ 3 =", num ** 3)
+
+
+4.13 Program to Compute Sum of First n Natural Numbers:
+
+# Sum of first n natural numbers
+n = int(input("Enter a positive integer n: "))
+sum_of_natural_numbers = n * (n + 1) // 2
+print("Sum of first", n, "natural numbers:", sum_of_natural_numbers)
+
+4.14 Program to Display 1 to 10 Numbers in Reverse Order:
+
+# Display numbers 1 to 10 in reverse order
+print("Numbers from 10 to 1 in reverse order:")
+for num in range(10, 0, -1):
+    print(num)
+4.15 Program to Create a List of Any Specific Size, Arrange All the Elements in Ascending Order, and Display the List Before and After Sorting:
+
+# Create a list and sort it
+size = int(input("Enter the size of the list: "))
+my_list = []
+print("Enter the elements of the list:")
+for i in range(size):
+    element = int(input())
+    my_list.append(element)
+print("List before sorting:", my_list)
+my_list.sort()
+print("List after sorting:", my_list)
+
+Practical 5
+
+5.1 Program to Show the Creation and Working of Lists:
+# Creation and working of lists
+my_list = [1, 2, 3, 4, 5]
+# Printing the list
+print("Original list:", my_list)
+# Accessing elements of the list
+print("First element:", my_list[0])
+print("Last element:", my_list[-1])
+# Modifying elements of the list
+my_list[2] = 10
+print("Modified list:", my_list)
+# Adding elements to the list
+my_list.append(6)
+print("List after appending:", my_list)
+# Removing elements from the list
+my_list.remove(4)
+print("List after removing:", my_list)
+# Finding the length of the list
+print("Length of the list:", len(my_list))
+
+
+5.2 Program to Print Elements of a List ['q', 'w', 'e', 'r', 't', 'y'] in Separate Lines Along with Element’s Both Indexes (Positive and Negative):
+
+# Printing elements of a list with indexes
+my_list = ['q', 'w', 'e', 'r', 't', 'y']
+for index, value in enumerate(my_list):
+    print("Index (Positive):", index, "Index (Negative):", index - len(my_list), "Value:", value)
+
+
+5.3 Program to Demonstrate the Working of Methods Used with Lists:
+# Methods used with lists
+my_list = [1, 2, 3, 4, 5]
+# Append method
+my_list.append(6)
+print("After append:", my_list)
+# Pop method
+popped_value = my_list.pop()
+print("Popped value:", popped_value)
+print("List after pop:", my_list)
+# Extend method
+my_list.extend([6, 7, 8])
+print("After extend:", my_list)
+# Sort method
+my_list.sort()
+print("After sort:", my_list)
+
+
+5.4 Program to Create a 3x3 Matrix and Extract Individual Elements:
+# Creating a 3x3 matrix
+matrix = [[1, 2, 3],
+          [4, 5, 6],
+          [7, 8, 9]]
+# Extracting individual elements
+for i in range(len(matrix)):
+    for j in range(len(matrix[i])):
+        print("Element at row", i, "and column", j, ":", matrix[i][j])
+
+5.5 Program to Demonstrate Built-in Functions in Lists:
+# Built-in functions in lists
+my_list = [1, 2, 3, 4, 5]
+# Sum of elements
+print("Sum of elements:", sum(my_list))
+# Maximum element
+print("Maximum element:", max(my_list))
+# Minimum element
+print("Minimum element:", min(my_list))
+# Count of a specific element
+print("Count of 3:", my_list.count(3))
+# Index of a specific element
+print("Index of 4:", my_list.index(4))
+
+5.6 Program to Calculate the Mean, Variance, and Standard Deviation of a Given List of Numbers:
+import statistics
+# Given list of numbers
+numbers = [10, 20, 30, 40, 50]
+# Mean
+mean = statistics.mean(numbers)
+print("Mean:", mean)
+# Variance
+variance = statistics.variance(numbers)
+print("Variance:", variance)
+# Standard deviation
+std_dev = statistics.stdev(numbers)
+print("Standard Deviation:", std_dev)
+
