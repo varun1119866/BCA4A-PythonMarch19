@@ -1,0 +1,88 @@
+# 5.1 Creation and working of lists
+my_list = [1, 2, 3, 4, 5]
+print("Original list:", my_list)
+
+# Adding an element to the list
+my_list.append(6)
+print("List after appending 6:", my_list)
+
+# Removing an element from the list
+my_list.remove(3)
+print("List after removing 3:", my_list)
+
+# Accessing elements by index
+print("Element at index 2:", my_list[2])
+
+# Iterating through the list
+print("Elements of the list:")
+for item in my_list:
+    print(item)
+    
+# 5.2 Print elements of a list in separate lines along with their indexes
+my_list = ['q', 'w', 'e', 'r', 't', 'y']
+for index, value in enumerate(my_list):
+    print(f"Index: {index} (Positive), Index: {-len(my_list) + index} (Negative), Value: {value}")
+
+# 5.3 Demonstrate the working of methods used with lists
+my_list = [10, 20, 30, 40, 50]
+
+# Append method
+my_list.append(60)
+print("List after appending 60:", my_list)
+
+# Pop method
+popped_value = my_list.pop()
+print("Popped value:", popped_value)
+print("List after popping:", my_list)
+
+# Extend method
+my_list.extend([70, 80, 90])
+print("List after extending:", my_list)
+
+# Index method
+index = my_list.index(30)
+print("Index of 30:", index)
+
+# 5.4 Create a 3x3 Matrix and extract individual elements
+matrix = [[1, 2, 3],
+          [4, 5, 6],
+          [7, 8, 9]]
+
+print("Matrix:")
+for row in matrix:
+    print(row)
+
+# Extract individual elements
+print("Element at row 2, column 3:", matrix[1][2])  # Row index 1, Column index 2
+
+# 5.5 Demonstrate built-in functions in lists
+my_list = [10, 20, 30, 40, 50]
+
+# Length of the list
+print("Length of the list:", len(my_list))
+
+# Maximum value in the list
+print("Maximum value in the list:", max(my_list))
+
+# Minimum value in the list
+print("Minimum value in the list:", min(my_list))
+
+# Sum of elements in the list
+print("Sum of elements in the list:", sum(my_list))
+
+# 5.6 Calculate the mean, variance, and standard deviation of given list of numbers
+import statistics
+
+data = [10, 20, 30, 40, 50]
+
+# Mean
+mean = statistics.mean(data)
+print("Mean:", mean)
+
+# Variance
+variance = statistics.variance(data)
+print("Variance:", variance)
+
+# Standard deviation
+std_deviation = statistics.stdev(data)
+print("Standard deviation:", std_deviation)
