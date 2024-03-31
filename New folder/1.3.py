@@ -1,4 +1,4 @@
-print("NAME : RAGHAV \n ROLL NO : 2210997182")
+print("NAME : KHUSHI \n ROLL NO : 2210997120")
 # Taking input from user
 principal = float(input("Enter the principal amount: "))
 rate = float(input("Enter the annual interest rate (in percentage): "))
