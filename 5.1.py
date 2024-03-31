@@ -1,0 +1,10 @@
+ls=[1,2,3,4,5,6]
+print(ls)
+ls.append(7)
+print("List after using append",ls)
+li=ls.index(3)
+print("List after using index",li)
+ls.remove(4)
+print("List after using remove",ls)
+ls.pop()
+print("List after using pop",ls)
