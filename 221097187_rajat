@@ -1,0 +1,346 @@
+1.1
+
+length =float(input("Enter the length of the rectangle: "))
+breadth = float(input("Enter the width of the rectangle: "))
+area = length*breadth
+perimeter = 2*(length+breadth)
+print("Area of the rectangle:", area)
+print("Perimeter of the rectangle:", perimeter)
+
+1.2
+
+subject1 = float(input("Enter the marks of subject 1: "))
+subject2 = float(input("Enter the marks of subject 2: "))
+subject3 = float(input("Enter the marks of subject 3: "))
+average = (subject1 + subject2 + subject3) / 3
+print("The average marks are:", average)
+
+1.3
+
+principal = int(input("Enter the principal amount: "))
+rate = int(input("Enter rate of interest: "))
+time = int(input("Enter time in years: " ))
+Amount = principal * (pow((1 + rate / 100), time))
+CI = Amount - principal
+print("Compound interest is", CI)
+
+2.1
+
+a = "Welcome to Chitkara University!"
+print("Original string:", a)
+
+substring = a[2:10]
+print("Substring from index 2 to 9:", substring)
+
+start = a[:5]
+print("Substring from beginning to index 4:", start)
+
+end = a[12:]
+print("Substring from index 12 to the end:", end)
+
+negative = a[-6:-1]
+print("Substring from index -6 to -2:", negative)
+
+
+2.2
+
+
+a = "My roll no is 7237"
+
+print("Length of the string:", len(a))
+
+uppercase_string = a.upper()
+print("Uppercase string:", uppercase_string)
+
+lowercase_string = a.lower()
+print("Lowercase string:", lowercase_string)
+
+substring_count = a.count("o")
+print("Number of occurrences of 'o':", substring_count)
+
+substring_index = a.find("roll")
+print("Index of 'roll':", substring_index)
+
+replaced_string = a.replace("My", "Your")
+print("String after replacement:", replaced_string)
+
+splitted_string = a.split(" ")
+print("String after splitting by space:", splitted_string)
+
+joined_string = "-".join(["apple", "banana", "cherry"])
+print("Joined string:", joined_string)
+
+starts_with_hello = a.startswith("Hello")
+print("Starts with 'Hello':", starts_with_hello)
+
+ends_with_world = a.endswith("world!")
+print("Ends with 'world!':", ends_with_world)
+
+print("Is there any whitespace?", a.isspace())
+
+last_substring_index = a.rfind("o")
+print("Last index of 'o':", last_substring_index)
+
+last_substring_index = a.rindex("o")
+print("Last index of 'o':", last_substring_index)
+
+
+3.1
+
+print("Enter a Number (Numerator): ")
+numn = int(input())
+print("Enter a Number (denominator): ")
+numd = int(input())
+
+if numn%numd==0:
+  print("\n" +str(numn)+ " is divisible by " +str(numd))
+else:
+  print("\n" +str(numn)+ " is not divisible by " +str(numd))
+
+
+3.2
+
+
+number = float(input("Enter a number: "))
+if number > 0:
+    print("The number is positive.")      
+elif number < 0:
+    print("The number is negative.")     
+else:
+    print("The number is zero.")
+        
+
+3.3
+
+year = int(input("Enter a year: "))
+if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+    print(year, "is a leap year.")
+else:
+    print(year, "is not a leap year.")
+
+3.4
+
+basic_salary = int(input("Enter your basic salary: "))
+
+if basic_salary >= 20000:
+   da = .30 * basic_salary
+   hra = .20 * basic_salary
+else:
+   da = .20 * basic_salary
+   hra = .10 * basic_salary
+gross_salary = basic_salary + hra + da
+print(f"The gross salary is {gross_salary}.")
+
+3.5
+
+sales_amount = float(input("Enter the sales amount: "))
+
+if sales_amount >= 15000:
+    commission = sales_amount * 0.20
+elif sales_amount >= 1000:
+    commission = sales_amount * 0.15
+else:
+    commission = sales_amount * 0.10
+
+print("Sales Amount:", sales_amount)
+print("Commission:", commission)
+
+4.1
+
+word = "Simran Tiwana"
+index = 0
+while index < len(word):
+    print(word[index])
+    index += 1
+
+4.2
+
+num = 1
+while num <= 10:
+    print(num)
+    num += 1
+
+4.3
+
+num  = int(input('Enter a number: '))
+while num < 15:
+    num += 1
+    if num == 5:
+        continue
+    if num == 13:
+        break
+    print(num)
+
+4.4
+
+num = 0
+while num < 10:
+    print(num)
+    num += 1
+else:
+    print("Numbers less than 10")
+
+4.5
+
+total = 0
+num = 4
+while num <= 40:
+    total += num
+    num += 4
+print("Sum of the series:", total)
+
+
+4.6
+
+n = int(input("Enter the value of n: "))
+a, b = 0, 1
+count = 0
+while count < n:
+    print(a)
+    nth = a + b
+    a = b
+    b = nth
+    count += 1
+
+4.7
+
+rows = 7
+for i in range(1, rows+1):
+    print(" "*(rows-i) + "* "*i)
+
+4.8
+
+rows = 5
+for i in range(1, rows+1):
+    print(" "*(rows-i) + "* "*i)
+
+4.9
+
+total = 0
+num = 3
+while num <= 30:
+    total += num
+    num += 3
+print("Sum of the series:", total)
+
+4.10
+
+product = 15
+for num in range(13, 6, -2):
+    product *= num
+print("Product of the series:", product)
+
+4.11
+
+
+num = int(input("Enter a number: "))
+factorial = 1
+for i in range(1, num+1):
+    factorial *= i
+print("Factorial of", num, ":", factorial)
+
+4.12
+
+for i in range(2, 21, 2):
+    print("Cube of", i, ":", i**3)
+
+4.13
+
+n = int(input("Enter a number: "))
+sum = 0
+for i in range(1, n+1):
+    sum += i
+print("Sum of first", n, "natural numbers:", sum)
+
+4.14
+
+for i in range(10, 0, -1):
+    print(i)
+
+4.15
+
+size = int(input("Enter the size of the list: "))
+my_list = []
+for i in range(size):
+    my_list.append(int(input("Enter element {}:".format(i+1))))
+print("List before sorting:", my_list)
+my_list.sort()
+print("List after sorting:", my_list)
+
+5.1
+
+my_list = [1, 2, 3, 4, 5]
+print("Elements of the list:")
+for item in my_list:
+    print(item)
+    
+my_list[2] = 10
+print("\nModified list:")
+print(my_list)
+
+my_list.append(6)
+print("\nAppended list:")
+print(my_list)
+
+5.2
+
+my_list = ['q', 'w', 'e', 'r', 't', 'y']
+
+for i, item in enumerate(my_list):
+    print("Index {}: {} (Positive), {} (Negative)".format(i, item, i-len(my_list)))
+
+5.3
+
+my_list = [3, 1, 4, 1, 5]
+my_list.append(9)  
+print("Appended list:", my_list)
+
+my_list.sort()  
+print("Sorted list:", my_list)
+
+my_list.reverse() 
+print("Reversed list:", my_list)
+
+my_list.remove(1)  
+print("List after removing first occurrence of 1:", my_list)
+
+my_list.index(4)  
+print("Index of 4:", my_list.index(4))
+
+
+5.4
+
+matrix = [[1, 2, 3],
+          [4, 5, 6],
+          [7, 8, 9]]
+
+print("Individual elements of the matrix:")
+for i in range(3):
+    for j in range(3):
+        print("Element at ({}, {}): {}".format(i, j, matrix[i][j]))
+
+5.5
+
+my_list = [1, 2, 3, 4, 5]
+
+print("Length of the list:", len(my_list))
+print("Sum of the list:", sum(my_list))
+print("Minimum element of the list:", min(my_list))
+print("Maximum element of the list:", max(my_list))
+
+5.6
+
+import statistics
+
+my_list = [10, 20, 30, 40, 50]
+
+mean = statistics.mean(my_list)
+variance = statistics.variance(my_list)
+std_dev = statistics.stdev(my_list)
+
+print("Mean:", mean)
+print("Variance:", variance)
+print("Standard Deviation:", std_dev)
+
+
+
