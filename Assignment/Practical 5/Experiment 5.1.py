@@ -3,7 +3,7 @@ print("Name: Dhriti Gandhi\nRoll No: 2210997070")
 
 list1 = []
 list1.append(1)
-list1.append("Agamjot")
+list1.append("Dhriti")
 list1.append(3.45)
 list1.append(True)
 list1.append([1,2,3,4,5])
