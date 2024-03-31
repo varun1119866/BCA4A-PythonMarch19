@@ -1,0 +1,10 @@
+ls=[90,17,20,78,45,17]
+print(ls)
+ls.sort()
+print("List after sorting: ",ls)
+ls.insert(1,2)
+print("List after inserting 2: ",ls)
+li=ls.count(17)
+print("List after count method",li)
+ls.clear()
+print("List after clear method",ls)
