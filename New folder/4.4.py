@@ -1,4 +1,4 @@
-print("NAME : RAGHAV \n ROLL NO : 2210997182")
+print("NAME : KHUSHI \n ROLL NO : 2210997120")
 # Example of using else with while and break
 num = 10
 while num > 0:
