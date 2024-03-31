@@ -1,0 +1,5 @@
+string = input("Enter a string: ")
+print("Original string:", string)
+print("Slicing from 0 to 5:", string[0:5])
+print("Slicing from 7 to end:", string[7:])
+print("Slicing with step 2:", string[::2])
