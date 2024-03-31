@@ -1,4 +1,4 @@
-print("NAME : RAGHAV \n ROLL NO : 2210997182")
+print("NAME : KHUSHI \n ROLL NO : 2210997120")
 # Input year from the user
 year = int(input("Enter a year: "))
 
