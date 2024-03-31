@@ -3,6 +3,7 @@
 [SEC - 4A]
 
 Python Assignment 
+
 Practical 1 (Simple Introductory Python Programs) : 3 questions
 
 Practical 2 (Working with Strings – basic String Operations) : 2 questions
