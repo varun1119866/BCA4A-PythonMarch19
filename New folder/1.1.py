@@ -1,4 +1,4 @@
-print("NAME : RAGHAV \n ROLL NO : 2210997182")
+print("NAME : KHUSHI \n ROLL NO : 2210997120")
 length = float(input("Enter the length of the rectangle: "))
 width = float(input("Enter the width of the rectangle: "))
 
