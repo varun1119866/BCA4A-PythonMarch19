@@ -1,0 +1,6 @@
+string = input("Enter a string: ")
+print("Original string:", string)
+print("Length of string:", len(string))
+print("String in uppercase:", string.upper())
+print("String in lowercase:", string.lower())
+print("String replaced:", string.replace("Hello", "Hi"))
