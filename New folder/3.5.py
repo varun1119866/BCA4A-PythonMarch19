@@ -1,4 +1,4 @@
-print("NAME : RAGHAV \n ROLL NO : 2210997182")
+print("NAME : KHUSHI \n ROLL NO : 2210997120")
 # Input sales amount from the user
 sales_amount = float(input("Enter the sales amount for the salesman: "))
 
