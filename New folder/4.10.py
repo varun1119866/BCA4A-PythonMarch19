@@ -1,4 +1,4 @@
-print("NAME : KHUSHI \n ROLL NO : 2210997120")
+print("NAME : Khushi\n ROLL NO : 2210997120")
 # Initialize the product
 product = 1
 
@@ -11,4 +11,3 @@ for num in numbers:
 
 # Display the product
 print("Product of the series:", product)
-

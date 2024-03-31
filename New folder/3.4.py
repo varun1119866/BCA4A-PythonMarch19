@@ -1,4 +1,4 @@
-print("NAME : KHUSHI \n ROLL NO : 2210997120")
+print("NAME : Khushi\n ROLL NO : 2210997120")
 # Input basic salary from the user
 basic_salary = float(input("Enter the basic salary for the employee: "))
 

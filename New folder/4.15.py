@@ -1,4 +1,4 @@
-print("NAME : KHUSHI \n ROLL NO : 2210997120")
+print("NAME : Khushi\n ROLL NO : 2210997120")
 # Input the size of the list from the user
 size = int(input("Enter the size of the list: "))
 
@@ -17,4 +17,3 @@ my_list.sort()
 
 # Display the list after sorting
 print("List after sorting:", my_list)
-

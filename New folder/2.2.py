@@ -1,4 +1,4 @@
-print("NAME : KHUSHI \n ROLL NO : 2210997120")
+print("NAME : Khushi \n ROLL NO : 2210997120")
 # Define a sample string
 sample_string = "Hello, World!"
 

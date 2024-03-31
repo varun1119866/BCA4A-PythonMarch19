@@ -1,4 +1,4 @@
-print("NAME : KHUSHI \n ROLL NO : 2210997120")
+print("NAME : Khushi\n ROLL NO : 2210997120")
 # Input marks for three subjects
 subject1 = float(input("Enter marks for subject 1: "))
 subject2 = float(input("Enter marks for subject 2: "))

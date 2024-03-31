@@ -1,4 +1,4 @@
-print("NAME : KHUSHI \n ROLL NO : 2210997120")
+print("NAME : Khushi\n ROLL NO : 2210997120")
 # Input the number from the user
 number = int(input("Enter the number: "))
 

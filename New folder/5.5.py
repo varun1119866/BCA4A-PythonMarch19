@@ -1,4 +1,4 @@
-print("NAME : KHUSHI \n ROLL NO : 2210997120")
+print("NAME : Khushi\n ROLL NO : 2210997120")
 # Define a list
 my_list = [3, 1, 4, 1, 5, 9, 2, 6, 5]
 
