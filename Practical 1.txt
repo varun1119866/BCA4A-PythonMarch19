@@ -1,0 +1,67 @@
+Practical-1
+
+(1.1)
+
+def calculate_area(length, width):
+    return length * width
+
+def calculate_perimeter(length, width):
+    return 2 * (length + width)
+
+def main():
+    length = float(input("Enter the length of the rectangle: "))
+    width = float(input("Enter the width of the rectangle: "))
+
+    area = calculate_area(length, width)
+    perimeter = calculate_perimeter(length, width)
+
+    print("Area of the rectangle:", area)
+    print("Perimeter of the rectangle:", perimeter)
+
+if _name_ == "_main_":
+    main()
+
+
+(1.2)
+
+def calculate_average(subject1, subject2, subject3):
+    total_marks = subject1 + subject2 + subject3
+    return total_marks / 3
+
+def main():
+    subject1 = float(input("Enter marks for subject 1: "))
+    subject2 = float(input("Enter marks for subject 2: "))
+    subject3 = float(input("Enter marks for subject 3: "))
+
+    average_marks = calculate_average(subject1, subject2, subject3)
+
+    print("Average marks:", average_marks)
+
+if _name_ == "_main_":
+    main()
+
+
+(1.3)
+
+def compound_interest(principal, rate, time):
+ 
+    amount = principal * (1 + rate/100)**time
+    
+    interest = amount - principal
+    return amount, interest
+
+def main():
+    principal = float(input("Enter the principal amount: "))
+    rate = float(input("Enter the annual interest rate (in percentage): "))
+    time = float(input("Enter the time period (in years): "))
+
+    amount, interest = compound_interest(principal, rate, time)
+
+    print("Principal amount:", principal)
+    print("Annual interest rate:", rate)
+    print("Time period (in years):", time)
+    print("Compound interest:", interest)
+    print("Amount after compound interest:", amount)
+
+if _name_ == "_main_":
+    main()
