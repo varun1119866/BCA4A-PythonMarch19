@@ -1,0 +1,57 @@
+Practical-2
+
+(2.1)
+
+def main():
+    sample_string = "Hello, world!"
+
+    print("Original string:", sample_string)
+
+    substring1 = sample_string[2:6]
+    print("Basic slicing (substring from index 2 to 5):", substring1)
+
+    substring2 = sample_string[:6]
+    print("Slicing from the beginning to index 5:", substring2)
+
+    substring3 = sample_string[7:]
+    print("Slicing from index 7 to the end:", substring3)
+
+    substring4 = sample_string[-6:-1]
+    print("Using negative indices (substring from -6 to -2):", substring4)
+
+    substring5 = sample_string[::2]
+    print("Slicing with a step of 2:", substring5)
+
+    substring6 = sample_string[::-1]
+    print("Reversed string:", substring6)
+
+if _name_ == "_main_":
+    main()
+
+
+(2.2)
+
+def main():
+    sample_string = "Hello, world!"
+
+    print("Length of the string:", len(sample_string))
+    print("Uppercase:", sample_string.upper())
+    print("Lowercase:", sample_string.lower())
+    print("Capitalized:", sample_string.capitalize())
+    print("Occurrences of 'l':", sample_string.count('l'))
+    print("Index of 'world':", sample_string.find('world'))
+    
+    replaced_string = sample_string.replace('Hello', 'Hi')
+    print("String after replacement:", replaced_string)
+
+    print("Starts with 'Hello':", sample_string.startswith('Hello'))
+    print("Ends with 'world!':", sample_string.endswith('world!'))
+
+    words = sample_string.split(',')
+    print("Split string:", words)
+
+    joined_string = '-'.join(words)
+    print("Joined string:", joined_string)
+
+if _name_ == "_main_":
+    main()

@@ -1,0 +1,105 @@
+Practical-3
+
+(3.1)
+
+def check_divisibility(num1, num2):
+    if num2 == 0:
+        return False  
+    return num1 % num2 == 0
+
+def main():
+    num1 = int(input("Enter the first number: "))
+    num2 = int(input("Enter the second number: "))
+
+    if check_divisibility(num1, num2):
+        print(f"{num1} is divisible by {num2}")
+    else:
+        print(f"{num1} is not divisible by {num2}")
+
+if _name_ == "_main_":
+    main()
+
+
+(3.2)
+
+def check_number(num):
+    if num > 0:
+        return "Positive"
+    elif num < 0:
+        return "Negative"
+    else:
+        return "Zero"
+
+def main():
+    num = float(input("Enter a number: "))
+    result = check_number(num)
+    print(f"The number {num} is {result}.")
+
+if _name_ == "_main_":
+    main()
+
+(3.3)
+
+def is_leap_year(year):
+    
+
+    if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+        return True
+    else:
+        return False
+
+def main():
+    year = int(input("Enter a year: "))
+    if is_leap_year(year):
+        print(f"{year} is a leap year.")
+    else:
+        print(f"{year} is not a leap year.")
+
+if _name_ == "_main_":
+    main()
+
+
+(3.4)
+
+def calculate_salary(bs):
+    if bs >= 20000:
+        da = 0.3 * bs
+        hra = 0.2 * bs
+    else:
+        da = 0.2 * bs
+        hra = 0.1 * bs
+    total_salary = bs + da + hra
+    return da, hra, total_salary
+
+def main():
+    bs = float(input("Enter the basic salary: "))
+    da, hra, total_salary = calculate_salary(bs)
+    print(f"Basic Salary: {bs}")
+    print(f"Dearness Allowance (DA): {da}")
+    print(f"House Rent Allowance (HRA): {hra}")
+    print(f"Total Salary: {total_salary}")
+
+if _name_ == "_main_":
+    main()
+
+
+(3.5)
+
+def calculate_commission(sales_amount):
+    if sales_amount >= 15000:
+        commission = 0.20 * sales_amount
+    elif sales_amount >= 1000:
+        commission = 0.15 * sales_amount
+    else:
+        commission = 0.10 * sales_amount
+    return commission
+
+def main():
+    sales_amount = float(input("Enter the sales amount: "))
+    commission = calculate_commission(sales_amount)
+    print(f"Sales Amount: {sales_amount}")
+    print(f"Commission: {commission}")
+
+if _name_ == "_main_":
+    main()
+

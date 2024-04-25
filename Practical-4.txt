@@ -1,0 +1,246 @@
+Practical-4
+
+(4.1)
+
+def main():
+    count = 0
+    while count < 5:
+        print("This is iteration", count + 1)
+        count += 1
+    print("Loop finished.")
+
+if _name_ == "_main_":
+    main()
+
+(4.2)
+
+def main():
+    num = 1
+    while num <= 5:
+        print(num)
+        num += 1
+    print("Loop finished.")
+
+if _name_ == "_main_":
+    main()
+
+(4.3)
+
+def main():
+    
+    print("Using break statement:")
+    for i in range(1, 6):
+        if i == 4:
+            break  
+        print("Current value of i:", i)
+    print("Loop finished.")
+
+    
+    print("\nUsing continue statement:")
+    for i in range(1, 6):
+        if i == 3:
+            continue  
+        print("Current value of i:", i)
+    print("Loop finished.")
+
+if _name_ == "_main_":
+    main()
+
+
+(4.4)
+
+def main():
+   
+    print("Example 1: else with while loop and break")
+    count = 0
+    while count < 5:
+        print("Inside the loop, count =", count)
+        count += 1
+    else:
+        print("Inside the else block. Loop finished.")
+
+    
+    print("\nExample 2: else with while loop and break")
+    count = 0
+    while count < 5:
+        print("Inside the loop, count =", count)
+        if count == 3:
+            print("Breaking out of the loop.")
+            break
+        count += 1
+    else:
+        print("Inside the else block. Loop finished.")
+
+if _name_ == "_main_":
+    main()
+
+(4.5)
+
+def main():
+    
+    total_sum = 0
+    
+    
+    for i in range(4, 41, 4):
+        total_sum += i
+    
+    print("Sum of the series 4 + 8 + 12 + ... + 40 is:", total_sum)
+
+if _name_ == "_main_":
+    main()
+
+(4.6)
+
+def fibonacci_sequence(n):
+    fib_sequence = [0, 1]
+    for i in range(2, n):
+        next_term = fib_sequence[i-1] + fib_sequence[i-2]
+        fib_sequence.append(next_term)
+    return fib_sequence
+
+def main():
+    n = int(input("Enter the value of n: "))
+    if n <= 0:
+        print("Please enter a positive integer for n.")
+    else:
+        fib_sequence = fibonacci_sequence(n)
+        print("Fibonacci sequence up to the", n, "th term:")
+        print(fib_sequence)
+
+if _name_ == "_main_":
+    main()
+
+(4.7)
+
+def print_multiplication_table(number):
+    print(f"Multiplication table of {number}:")
+    for i in range(1, 11):
+        print(f"{number} x {i} = {number * i}")
+
+def main():
+    number = int(input("Enter a number: "))
+    print_multiplication_table(number)
+
+if _name_ == "_main_":
+    main()
+
+(4.8)
+
+def print_triangle(height):
+    for i in range(1, height + 1):
+        print("*" * i)
+
+def main():
+    height = int(input("Enter the height of the triangle: "))
+    print("Triangle Pattern:")
+    print_triangle(height)
+
+if _name_ == "_main_":
+    main()
+
+(4.9)
+
+def main():
+    
+    total_sum = 0
+    
+  
+    for i in range(3, 31, 3):
+        total_sum += i
+    
+    print("Sum of the series 3 + 6 + 9 + ... + 30 is:", total_sum)
+
+if _name_ == "_main_":
+    main()
+
+(4.10)
+
+def main():
+    
+    numbers = [15, 13, 11, 9, 7]
+
+    
+    product = 1
+    
+    
+    for num in numbers:
+        product *= num
+    
+    print("Product of the series 15 * 13 * 11 * 9 * 7 is:", product)
+
+if _name_ == "_main_":
+    main()
+
+(4.11)
+
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+def main():
+    number = int(input("Enter a number to compute its factorial: "))
+    if number < 0:
+        print("Factorial is not defined for negative numbers.")
+    else:
+        fact = factorial(number)
+        print("Factorial of", number, "is:", fact)
+
+if _name_ == "_main_":
+    main()
+
+(4.12)
+
+def main():
+    print("Cube of first 10 even numbers:")
+    for i in range(2, 21, 2):
+        cube = i ** 3
+        print(f"The cube of {i} is: {cube}")
+
+if _name_ == "_main_":
+    main()
+
+(4.13)
+
+def sum_of_natural_numbers(n):
+    
+    sum_value = n * (n + 1) // 2
+    return sum_value
+
+def main():
+    n = int(input("Enter the value of n: "))
+    if n <= 0:
+        print("Please enter a positive integer for n.")
+    else:
+        sum_value = sum_of_natural_numbers(n)
+        print("Sum of the first", n, "natural numbers:", sum_value)
+
+if _name_ == "_main_":
+    main()
+
+(4.14)
+
+def main():
+    print("Numbers from 10 to 1 in reverse order:")
+    for i in range(10, 0, -1):
+        print(i)
+
+if _name_ == "_main_":
+    main()
+
+(4.15)
+
+def main():
+    size = int(input("Enter the size of the list: "))
+    num_list = []
+    print("Enter", size, "numbers:")
+    for i in range(size):
+        num = int(input())
+        num_list.append(num)
+    print("\nList before sorting:", num_list)
+    num_list.sort()
+    print("List after sorting:", num_list)
+
+if _name_ == "_main_":
+    main()
