@@ -1,0 +1,351 @@
+
+
+### 1. Simple Introductory Python Programs:
+
+#### 1.1 Calculate Area and Perimeter of a Rectangle:
+```python
+length = float(input("Enter length of rectangle: "))
+width = float(input("Enter width of rectangle: "))
+
+area = length * width
+perimeter = 2 * (length + width)
+
+print("Area:", area)
+print("Perimeter:", perimeter)
+```
+
+#### 1.2 Calculate Avg. marks of 3 subjects:
+```python
+subject1 = float(input("Enter marks of subject 1: "))
+subject2 = float(input("Enter marks of subject 2: "))
+subject3 = float(input("Enter marks of subject 3: "))
+
+average = (subject1 + subject2 + subject3) / 3
+
+print("Average marks:", average)
+```
+
+#### 1.3 Compute compound Interest:
+```python
+principal = float(input("Enter principal amount: "))
+rate = float(input("Enter interest rate (in percentage): "))
+time = float(input("Enter time period (in years): "))
+
+compound_interest = principal * ((1 + (rate / 100)) ** time - 1)
+
+print("Compound interest:", compound_interest)
+```
+
+### 2. Working with Strings - Basic String Operations:
+
+#### 2.1 Demonstrate Slicing Operations in Strings:
+```python
+string = "Hello, World!"
+
+print("Original string:", string)
+print("Sliced string (0-5):", string[0:5])
+print("Sliced string (7-):", string[7:])
+```
+
+#### 2.2 Demonstrate built-in functions of Strings:
+```python
+string = "hello"
+
+print("Original string:", string)
+print("Uppercase:", string.upper())
+print("Length:", len(string))
+```
+
+### 3. Conditionals in Python - Decision Control:
+
+#### 3.1 Check if one number is divisible by the other or not:
+```python
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
+
+if num1 % num2 == 0:
+    print(num1, "is divisible by", num2)
+else:
+    print(num1, "is not divisible by", num2)
+```
+
+#### 3.2 Check if a number is positive, negative, or zero:
+```python
+num = float(input("Enter a number: "))
+
+if num > 0:
+    print("Positive")
+elif num < 0:
+    print("Negative")
+else:
+    print("Zero")
+```
+
+#### 3.3 Check if a given year is Leap or not:
+```python
+year = int(input("Enter a year: "))
+
+if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+    print(year, "is a leap year")
+else:
+    print(year, "is not a leap year")
+```
+
+#### 3.4 Calculate DA and HRA for an employee:
+```python
+basic_salary = float(input("Enter basic salary: "))
+
+if basic_salary >= 20000:
+    da = 0.3 * basic_salary
+    hra = 0.2 * basic_salary
+else:
+    da = 0.2 * basic_salary
+    hra = 0.1 * basic_salary
+
+print("DA:", da)
+print("HRA:", hra)
+```
+
+#### 3.5 Calculate commission for a salesman:
+```python
+sales_amount = float(input("Enter sales amount: "))
+
+if sales_amount >= 15000:
+    commission = 0.2 * sales_amount
+elif sales_amount >= 1000:
+    commission = 0.15 * sales_amount
+else:
+    commission = 0.1 * sales_amount
+
+print("Commission:", commission)
+```
+
+### 4. While and For Loops - Repetition Control Statements:
+
+#### 4.1 Show working of a while loop with a text:
+```python
+i = 0
+while i < 5:
+    print("Iteration", i)
+    i += 1
+```
+
+#### 4.2 Show working of a while loop with numbers:
+```python
+i = 1
+while i <= 5:
+    print(i)
+    i += 1
+```
+
+#### 4.3 Show the working of break and continue statements:
+```python
+for i in range(10):
+    if i == 3:
+        break
+    print(i)
+```
+
+#### 4.4 Show the use of else statement with while and break:
+```python
+i = 0
+while i < 5:
+    print(i)
+    i += 1
+else:
+    print("Loop ended")
+```
+
+#### 4.5 Compute the sum of the series 4 + 8 + 12 + … + 40:
+```python
+total = 0
+for i in range(4, 41, 4):
+    total += i
+print("Sum of the series:", total)
+```
+
+#### 4.6 Display the Fibonacci sequences up to nth term:
+```python
+n = int(input("Enter the value of n: "))
+a, b = 0, 1
+print("Fibonacci sequence:")
+while a <= n:
+    print(a, end=" ")
+    a, b = b, a + b
+```
+
+#### 4.7 Print multiplication table of a number using for loop:
+```python
+num = int(input("Enter a number: "))
+print("Multiplication table of", num)
+for i in range(1, 11):
+    print(num, "x", i, "=", num * i)
+```
+
+#### 4.8 Print a Triangle Pattern:
+```python
+rows = int(input("Enter the number of rows: "))
+for i in range(1, rows + 1):
+    print(" " * (rows - i) + "* " * i)
+```
+
+#### 4.9 Compute Sum of the series 3 + 6 + 9 + … + 30:
+```python
+total = 0
+for i in range(3, 31, 3):
+    total += i
+print("Sum of the series:", total)
+```
+
+#### 4.10 Print the product of the series m = 15 * 13 * 11 * 9 * 7:
+```python
+product = 1
+for i in range(15, 6, -2):
+    product *= i
+print("Product of the series:", product)
+```
+
+#### 4.11 Compute factorial of a Number:
+```python
+num = int(input("Enter a number: "))
+factorial = 1
+for i in range(1, num + 1):
+    factorial *= i
+print("Factorial of", num, "is", factorial)
+```
+
+#### 4.12 Display the Cube of first 10 even numbers:
+```python
+print("Cube of first 10 even numbers:")
+for i in range(2, 21, 2):
+    print("Cube of", i, "is", i ** 3)
+```
+
+#### 4.13 Compute sum of first n natural numbers:
+```python
+n = int(input("Enter a number: "))
+sum_n = n * (n + 1) // 
+
+
+Here are the solutions for the exercises related to working with lists in Python:
+
+### 5. Working with Lists in Python:
+
+#### 5.1 Show the creation and working of lists:
+```python
+# Creating a list
+my_list = [1, 2, 3, 4, 5]
+
+# Accessing elements
+print("Elements of the list:", my_list)
+
+# Modifying elements
+my_list[0] = 10
+print("Modified list:", my_list)
+
+# Adding elements
+my_list.append(6)
+print("List after appending 6:", my_list)
+
+# Removing elements
+my_list.remove(3)
+print("List after removing 3:", my_list)
+```
+
+#### 5.2 Print elements of a list ['q','w','e','r','t','y'] in separate lines along with element’s both indexes (Positive and Negative):
+```python
+my_list = ['q', 'w', 'e', 'r', 't', 'y']
+
+for i in range(len(my_list)):
+    print("Positive Index:", i, "Negative Index:", i - len(my_list), "Element:", my_list[i])
+```
+
+#### 5.3 Demonstrate the working of methods used with lists:
+```python
+# Creating a list
+my_list = [1, 2, 3, 4, 5]
+
+# Demonstrating methods
+print("Original List:", my_list)
+
+# Append method
+my_list.append(6)
+print("List after appending 6:", my_list)
+
+# Extend method
+my_list.extend([7, 8, 9])
+print("List after extending:", my_list)
+
+# Pop method
+popped_element = my_list.pop()
+print("Popped element:", popped_element, "Updated List:", my_list)
+
+# Insert method
+my_list.insert(2, 10)
+print("List after inserting 10 at index 2:", my_list)
+
+# Remove method
+my_list.remove(4)
+print("List after removing 4:", my_list)
+
+# Index method
+index = my_list.index(3)
+print("Index of 3:", index)
+
+# Count method
+count = my_list.count(2)
+print("Count of 2:", count)
+
+# Reverse method
+my_list.reverse()
+print("Reversed list:", my_list)
+
+# Sort method
+my_list.sort()
+print("Sorted list:", my_list)
+```
+
+#### 5.4 Create a 3*3 Matrix and extract individual elements of the matrix:
+```python
+matrix = [[1, 2, 3],
+          [4, 5, 6],
+          [7, 8, 9]]
+
+# Extracting individual elements
+for row in matrix:
+    for element in row:
+        print(element)
+```
+
+#### 5.5 Demonstrate built-in functions in Lists:
+```python
+# Creating a list
+my_list = [1, 2, 3, 4, 5]
+
+# Built-in functions
+print("Length of the list:", len(my_list))
+print("Maximum element:", max(my_list))
+print("Minimum element:", min(my_list))
+print("Sum of elements:", sum(my_list))
+```
+
+#### 5.6 Calculate the mean, variance, and standard deviation of a given list of numbers:
+```python
+import statistics
+
+# Given list of numbers
+numbers = [10, 20, 30, 40, 50]
+
+# Calculating mean
+mean = statistics.mean(numbers)
+print("Mean:", mean)
+
+# Calculating variance
+variance = statistics.variance(numbers)
+print("Variance:", variance)
+
+# Calculating standard deviation
+std_deviation = statistics.stdev(numbers)
+print("Standard Deviation:", std_deviation)
+```
+
